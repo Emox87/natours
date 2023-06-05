@@ -51,13 +51,33 @@ body {
   height: 35px;
 }
 
-/* Iphone SE, 7, 8 Portrait Mode */
-/* @media screen and (max-width: 375px) {
-  body {
-    padding: 0;
-  }
+/* Text Box has to be centered on the screen */
+/* No matter what the screen size is */
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
 
-  .header {
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 75%);
-  }
-} */
+/* Heading Primary */
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Heading Primary Main */
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+/* Heading Primary Sub */
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+}
