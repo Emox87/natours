@@ -26,6 +26,7 @@ body {
 
 /* Header */
 .header {
+  position: relative;
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
@@ -36,6 +37,18 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+/* Logo-Box in the Header */
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+/* Logo image */
+.logo {
+  height: 35px;
 }
 
 /* Iphone SE, 7, 8 Portrait Mode */
