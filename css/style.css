@@ -58,6 +58,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-40%, -50%);
+  text-align: center;
 }
 
 /* Heading Primary */
@@ -67,6 +68,7 @@ body {
 
   /* Fixing shaking animations on text */
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 /* Heading Primary Main */
@@ -94,6 +96,36 @@ body {
 
   /* Animation shorthand property */
   animation: moveInRight 1s ease-out;
+}
+
+/* Header Button to discover tours */
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+/* Button Hover State */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Active state - when clicked its the active state */
+.btn:active {
+  transform: translateY(
+    -1px
+  ); /* this is in relation to the initial link state*/
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  padding: 15px 40px;
+  display: inline-block;
 }
 
 /* Animations */
