@@ -7,6 +7,8 @@
     border-radius: 100px;
     transition: all 0.2s;
     position: relative;
+    padding: 1.5rem 4rem;
+    display: inline-block;
   }
 
   // Button Hover State
@@ -48,12 +50,20 @@
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
-    padding: 1.5rem 4rem;
-    display: inline-block;
 
     // Virtual element which stays behind the button
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    // Virtual element which stays behind the button
+    &::after {
+      background-color: $color-primary;
     }
   }
 
