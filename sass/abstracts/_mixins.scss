@@ -21,23 +21,20 @@
 
 // MEDIA QUERY MANAGER
 /*
-  0 - 600px     --->   Phone
-  600 - 900px   --->  Tablet in portrait Mode
-  900 - 1200px  --->  Tablet in landscape Mode
-  1200 - 1800px --->  Here our normal styles apply
-  1800px +      --->  Big Desktop
 
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
+0 - 600px         --->  Phone (1rem = 6px)
+600 - 900px       --->  Tablet in portrait Mode (1rem = 8px)
+900 - 1200px      --->  Tablet in landscape Mode  (1rem = 9px)
+[1200 - 1800px]   --->  Here our normal styles apply (1rem = 10px)
+1800px +          --->  Big Desktop (1rem = 12px)
 
 $breakpoint choises:
-- phone
+- phone 
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER: Base + typography > general layout+ grid > page layout > components
 
 1em = 16px;
 Always use EMS and NOT REMS for mediaquuery breakpoints!
